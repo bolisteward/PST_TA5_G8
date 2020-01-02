@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical"
+    tools:context=".Inicio_sesion">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="339dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/logo_marvel" />
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/estPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/coloBtnLogin"
+        android:onClick="iniciarSesion"
+        android:text="Login"/>
+</LinearLayout>

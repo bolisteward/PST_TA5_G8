@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pivote_marvelPelis">
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/img_top" />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:text="Usuario"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:text="Personaje/Pelicula" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtTitulo"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageButton
+                android:id="@+id/btn_wolverine"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/wolverine" />
+
+            <ImageButton
+                android:id="@+id/btn_capAmerica"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/capitan_america" />
+            <ImageButton
+                android:id="@+id/btn_IronMan"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/iron_man" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageButton
+                android:id="@+id/btn_Spider"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/spider_man" />
+
+            <ImageButton
+                android:id="@+id/btn_venom"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/venom" />
+            <ImageButton
+                android:id="@+id/btn_arrow"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/arrow" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
