@@ -27,19 +27,22 @@
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:textSize="30sp"
-        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/icono"
         android:layout_centerHorizontal="true"
-        android:text="Personaje/Pelicula" />
+        android:layout_marginTop="80dp"
+        android:text="Personaje/Pelicula"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="393dp"
+        android:layout_height="372dp"
         android:layout_below="@id/txtTitulo"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="50dp">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -49,17 +52,21 @@
                 android:id="@+id/btn_wolverine"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:onClick="wolverine"
                 app:srcCompat="@drawable/wolverine" />
 
             <ImageButton
                 android:id="@+id/btn_capAmerica"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:onClick="capitan"
                 app:srcCompat="@drawable/capitan_america" />
+
             <ImageButton
                 android:id="@+id/btn_IronMan"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:onClick="iron"
                 app:srcCompat="@drawable/iron_man" />
 
 
@@ -73,17 +80,21 @@
                 android:id="@+id/btn_Spider"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:onClick="spidey"
                 app:srcCompat="@drawable/spider_man" />
 
             <ImageButton
                 android:id="@+id/btn_venom"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:onClick="venom"
                 app:srcCompat="@drawable/venom" />
+
             <ImageButton
                 android:id="@+id/btn_arrow"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:onClick="halcon"
                 app:srcCompat="@drawable/arrow" />
         </TableRow>
     </TableLayout>
